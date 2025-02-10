@@ -1,0 +1,383 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+@import url{'https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700& display=swap'}
+body
+{
+  font-family: 'Quicksand', sans-serif;
+}
+ul
+{
+  list-style:none ;
+}
+a
+{
+  text-decoration: none;
+}
+
+.container{
+  
+  max-width: 1000px;
+  margin:auto ;
+}
+ /* utility clases*/
+.spanf
+{
+  font-size: 60px;
+  color:white;
+}
+.btn{
+  display: inline-block;
+  padding:18px 33px ;
+  
+  border-radius: 15px;
+}
+.btn-primary{
+  color:white;
+  border:2px solid white ;
+}
+.btn-secondary{
+  color: white;
+  background-color:seagreen;
+  margin-top:13px ;
+}
+.btn-secondary:hover{
+  background-color:gold;
+  cursor:help;
+}
+.btn-primary:hover
+{
+background-color:gold;
+}
+/* Header Start */
+header
+{
+  height:100vh ;
+  background: url(./img/home_bg.jpeg) center center/cover no-repeat;
+  position: relative;
+}
+#navbar
+{
+
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+}
+#navbar img
+{
+width: 73px;
+margin-left: 100px;
+color: gold;
+background-color:rgb(187, 121, 0);
+}
+#navbar ul
+{
+display: flex;
+margin-right: 100px;
+}
+#navbar ul li a
+{
+  padding:10px 5px;
+  color: white;
+  font-weight: 700;
+}
+ #navbar ul li a:hover
+{
+  border-bottom: 3px solid yellow;
+}
+
+header .content
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65%;
+}
+header .content h1{
+  font-size: 50px;
+  color: white;
+}
+header .content p
+{
+  color:whitesmoke;
+  font-size:25px ;
+  margin: 20px 0 40px;
+}
+header::before
+/* Header end */
+
+/*About start */
+#about{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+}
+.title{
+  text-align: center;
+  margin-bottom:4rem ;
+}
+#about h2,
+#offers h2,
+#menu h2 {
+  font-size: 40px;
+ 
+  margin-bottom:20px ;
+}
+#about h2,
+#menu h2
+{
+  color: purple;
+}
+#about .title p,
+#menu .title p
+{
+  font-size:26px ;
+  color:gray ;
+  font-weight:500 ;
+}
+.about-content{
+  display: flex;
+  justify-content: space-between;
+}
+.about-content img{
+  width: 425px;
+}
+.about-content p{
+  color: gray;
+  margin-right:17px ;
+  font-weight:500;
+  line-height:150% ;
+}
+
+/*About end */
+/*offers start*/
+#offers{
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  background:url('./img/offer-background.jpg') center center/cover fixed ;
+}
+#offers.title{
+  text-align: center;
+  margin-bottom:3rem ;
+}
+#offers h2{
+  color: gold;
+}
+#offers .title p{
+  color: white;
+  font-weight: 300;
+  font-size: 25px;
+}
+#offers .offers-itmes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+color: white;
+}
+#offers .offers-itmes img{
+  width: 200px;
+}
+span{
+  color: gold;
+  font-size:20px ;
+  font-weight: 700;
+  margin-left: 10px;
+}
+#offers .offers-itmes h3{
+  font-size: 30px;
+  margin: 12px 0;
+}
+#offers .offers-itmes p{
+  padding-right:15px ;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+/*offers end*/
+/*menu start*/
+#menu{
+  background:whitesmoke ;
+  padding: 5rem 0 ;
+}
+#menu .title{
+text-align:center;
+margin-bottom: 5rem;
+}
+#menu .menu-items-left{
+  display:block;
+  justify-content:right;
+  align-items:right;
+  font-size: 10px;
+margin: 20px;
+margin-right: 15px;
+}
+#menu .menu-items-right{
+  display:block;
+  justify-content:left;
+  align-items:left;
+  margin: 20px;
+  font-size: 10px;
+  margin-left: 15px;
+}
+#menu .menu-items .menu-item img{
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+#munu .menu-items ,.menu-item h3{
+  color: purple;
+  font-size: 30px;
+}
+#menu p{
+  font-size:17px ;
+}
+#menu h3{
+font-size: 21px;
+color: purple;
+border-bottom: 3px dashed gold;
+padding: 5px;
+position: relative;
+}
+#menu span{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#menu .BTN{
+  background: purple;
+  color:white;
+  font-size: 24px;
+  display: block;
+  margin:20px auto 0;
+}
+#menu .BTN:hover{
+  background-color:gold;
+  cursor: no-drop;
+}
+/*menu end*/
+/*daytime start*/
+#daytime{
+  background: url("./img/daytime_bg.jpeg")center center/cover fixed no-repeat;
+  color: white;
+  text-align:center ;
+}
+#daytime .daytime-items
+{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  height:40vh ;
+}
+#daytime .daytime-items h3{
+  font-size: 31px;
+  margin:21px 0 10px 0 ;
+}
+#daytime .daytime-items p{
+  font-weight: 500;
+}
+/*daytime end*/
+/*contact start*/
+#contact{
+  padding:5rem 0 ;
+  background-color:powderblue;
+}
+ .container{
+  max-width:1100px ;
+}
+.content{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+form{
+  text-align:right;
+  display:block;
+  margin-left: 15px;
+}
+.contact-info{
+  width: 50%;
+}
+#contact .contact-content .contact-info div{
+  margin: 30px 0;
+  line-height:1.7;
+}
+#contact .contact-content .contact-info h3{
+  font-size: 30px;
+  color: purple;
+  margin-bottom: 9px;
+}
+#contact .contact-content .contact-info p{
+  color: gray;
+}
+#contact .contact-content .contact-info i{
+  color:gold;
+  margin-right:6px ;
+}
+#contact .contact-content .contact-info a i{
+color: white;
+background-color: purple;
+padding:15px ;
+border-radius: 50%;
+font-size: 20px;
+}
+#contact .contact-content .contact-info a i:hover{
+  background-color: gold;
+}
+form input,
+textarea
+{
+  display: block;
+  width: 100%;
+  padding:15px 20px ;
+  margin: 22px 0px;
+  background-color:#e3e2dd;
+  color:white;
+  border: none;
+}
+#contact .btn{
+  background-color: purple;
+  color: white;
+}
+#contact .btn:hover
+{
+  background-color: gold;
+}
+#contact h1{
+  background-color:purple;
+  color: gold;
+  font-size: 50px;
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  height: 80px;
+  margin:40px 0 ;
+  padding: 10px 0;
+}
+/*contact end*/
+/*footer srtart*/
+#footer {
+  background-color:rgb(121, 0, 121);
+  text-align: center;
+  color:white;
+  padding: 17px 0;
+  font-size: 15px;
+}
+#footer a
+{
+  color: gold;
+}
+/*footer end*/
+
+
